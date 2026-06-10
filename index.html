@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AudioHaus — Professional Audio Sample Manager for macOS</title>
+  <meta name="description" content="AudioHaus is a local-first audio sample manager for macOS. Professional library management, time-stretching DSP, and AI-powered similarity search for your sample collection.">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Nav -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container site-nav__inner">
+    <a href="index.html" class="site-nav__logo">AudioHaus&nbsp;<span>by Easby Studios</span></a>
+    <div class="site-nav__links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="download.html">Download</a>
+      <a href="support.html">Support</a>
+    </div>
+    <div class="site-nav__cta">
+      <a href="pricing.html" class="btn btn-primary btn-sm">Buy Now</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <line x1="2" y1="5" x2="18" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="2" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="2" y1="15" x2="18" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+  <button class="nav-drawer__close" id="nav-drawer-close" aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <nav class="nav-drawer__links">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="download.html">Download</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <div class="nav-drawer__cta">
+    <a href="pricing.html" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Buy Now</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="section container">
+    <div class="hero">
+      <div class="hero__eyebrow">
+        <span class="pill">macOS 12+ &middot; Intel &amp; Apple Silicon</span>
+      </div>
+      <h1 class="h-display hero__title">A fast, local-first<br>sample manager.</h1>
+      <p class="hero__subtitle">Library, analysis, similarity search, 20-voice audition, RX-style waveform, Stacks layering — single app, no cloud, no plug-in build, no internet required. Pro Tools bridge and AI variations are coming in a future update.</p>
+      <div class="hero__actions">
+        <a href="pricing.html" class="btn btn-primary btn-lg">Buy Now</a>
+        <a href="download.html" class="btn btn-secondary btn-lg">Try Free</a>
+        <a href="#features" class="btn btn-ghost btn-lg">See Features</a>
+      </div>
+      <p class="hero__meta"><span class="text-muted">No subscription &middot; One-time purchase &middot; Works offline</span></p>
+      <div class="hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 1200 280" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="hero__galaxy" fill="currentColor">
+            <circle cx="48"   cy="42"  r="2.5"/><circle cx="118"  cy="198" r="2"/><circle cx="187"  cy="74"  r="3"/>
+            <circle cx="252"  cy="156" r="1.5"/><circle cx="318"  cy="32"  r="2.5"/><circle cx="386"  cy="218" r="2"/>
+            <circle cx="452"  cy="92"  r="3"/><circle cx="518"  cy="58"  r="1.5"/><circle cx="586"  cy="236" r="2.5"/>
+            <circle cx="652"  cy="118" r="2"/><circle cx="718"  cy="46"  r="3"/><circle cx="786"  cy="184" r="1.5"/>
+            <circle cx="852"  cy="78"  r="2.5"/><circle cx="918"  cy="226" r="2"/><circle cx="986"  cy="62"  r="3"/>
+            <circle cx="1052" cy="172" r="1.5"/><circle cx="1118" cy="104" r="2.5"/><circle cx="1160" cy="38"  r="2"/>
+            <circle cx="82"   cy="148" r="2"/><circle cx="156"   cy="252" r="1.5"/><circle cx="222"   cy="118" r="2.5"/>
+            <circle cx="288"  cy="248" r="2"/><circle cx="354"  cy="172" r="3"/><circle cx="422"  cy="48"  r="1.5"/>
+            <circle cx="488"  cy="206" r="2.5"/><circle cx="556"  cy="134" r="2"/><circle cx="622"  cy="68"  r="3"/>
+            <circle cx="688"  cy="248" r="1.5"/><circle cx="756"  cy="98"  r="2.5"/><circle cx="822"  cy="208" r="2"/>
+            <circle cx="888"  cy="44"  r="3"/><circle cx="956"  cy="148" r="1.5"/><circle cx="1022" cy="92"  r="2.5"/>
+            <circle cx="1088" cy="232" r="2"/><circle cx="1148" cy="158" r="3"/><circle cx="32"   cy="218" r="1.5"/>
+            <circle cx="102"  cy="92"  r="2.5"/><circle cx="172"  cy="38"  r="2"/><circle cx="238"  cy="208" r="3"/>
+            <circle cx="304"  cy="92"  r="1.5"/><circle cx="372"  cy="246" r="2.5"/><circle cx="438"  cy="152" r="2"/>
+            <circle cx="506"  cy="86"  r="3"/><circle cx="572"  cy="40"  r="1.5"/><circle cx="638"  cy="186" r="2.5"/>
+            <circle cx="706"  cy="156" r="2"/><circle cx="772"  cy="244" r="3"/><circle cx="838"  cy="132" r="1.5"/>
+            <circle cx="904"  cy="92"  r="2.5"/><circle cx="972"  cy="208" r="2"/><circle cx="1038" cy="124" r="3"/>
+            <circle cx="1104" cy="56"  r="1.5"/><circle cx="1168" cy="192" r="2.5"/><circle cx="66"   cy="262" r="2"/>
+            <circle cx="142"  cy="32"  r="3"/><circle cx="212"  cy="172" r="1.5"/><circle cx="278"  cy="76"  r="2.5"/>
+            <circle cx="344"  cy="132" r="2"/><circle cx="412"  cy="262" r="3"/>
+          </g>
+          <line class="hero__zero" x1="0" y1="140" x2="1200" y2="140" stroke="#e5e5e5" stroke-width="1"/>
+          <path class="hero__waveform" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                d="M 0 140 L 18 134 L 36 152 L 54 110 L 72 168 L 90 102 L 108 174 L 126 96 L 144 162 L 162 118 L 180 148 L 198 122 L 216 158 L 234 96 L 252 184 L 270 88 L 288 192 L 306 86 L 324 178 L 342 102 L 360 156 L 378 124 L 396 152 L 414 116 L 432 168 L 450 104 L 468 180 L 486 92 L 504 188 L 522 84 L 540 196 L 558 78 L 576 192 L 594 88 L 612 178 L 630 100 L 648 162 L 666 122 L 684 148 L 702 130 L 720 142 L 738 126 L 756 154 L 774 114 L 792 166 L 810 108 L 828 174 L 846 98 L 864 182 L 882 90 L 900 188 L 918 96 L 936 178 L 954 110 L 972 162 L 990 124 L 1008 148 L 1026 132 L 1044 140 L 1062 130 L 1080 144 L 1098 128 L 1116 146 L 1134 132 L 1152 140 L 1170 136 L 1188 140 L 1200 140"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features overview -->
+  <section id="features" class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="label">What it does</p>
+        <h2 class="h-section">Everything your samples need.</h2>
+        <p>Six core capabilities, built around one goal: get to the right sound faster.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="11" y="3" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="3" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="11" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <p class="card__title">Intelligent Library</p>
+          <p class="card__body">SQLite FTS5 index, drag-folder import, hot-remount aware, #tags, star ratings, missing-file relink, saved-search Finder tabs.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="2,13 5,7 8,11 11,5 14,9 17,4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="card__title">signalsmith DSP</p>
+          <p class="card__body">Tape, Stretch, and Pitch modes via signalsmith-stretch. True-peak normalisation, reverse, loop region, clip indicator, gain 0 to +24 dB.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="5" cy="8" r="1.5" fill="currentColor"/>
+              <circle cx="10" cy="5" r="1.5" fill="currentColor"/>
+              <circle cx="15" cy="11" r="1.5" fill="currentColor"/>
+              <circle cx="7" cy="13" r="1.5" fill="currentColor"/>
+              <circle cx="13" cy="7" r="1.5" fill="currentColor"/>
+              <circle cx="9" cy="16" r="1" fill="currentColor" opacity=".5"/>
+            </svg>
+          </div>
+          <p class="card__title">Galaxy View</p>
+          <p class="card__body">Vertex-cached 2-D scatter of one-shots over MFCC space. Pan / zoom / click-to-audition / drag-to-DAW. Shift-drag lasso for multi-select.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="10" y1="6" x2="10" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="10" y1="10" x2="13" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="card__title">20-Voice Audition</p>
+          <p class="card__body">Polyphonic pool with 4096-frame head-cache LRU, steal-oldest fades, background reader reaping, and atomic-pointer-swap transport hand-off.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="5" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 8h4a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="card__title">RX-Style Waveform</p>
+          <p class="card__body">Metal compute shader. Filled envelope at overview, signed sample-line at deep zoom, alpha-blended across the transition. RMS-normalised minimap.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="card__icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.42 1.42M14.36 14.36l1.42 1.42M4.22 15.78l1.42-1.42M14.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="card__title">Coming soon: AI Variations &amp; Pro Tools</p>
+          <p class="card__body">Planned for a future update, not in the current release: generate fresh variations of any sample locally on your Mac, plus an outbound Pro Tools bridge — Spot Raw / Spot Slices into Pro Tools, no plug-in.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof strip -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+        <div class="card center">
+          <h2 class="h-section font-medium">500k+</h2>
+          <p class="text-secondary mt-2">samples tested</p>
+        </div>
+        <div class="card center">
+          <h2 class="h-section font-medium">20</h2>
+          <p class="text-secondary mt-2">voice polyphonic audition</p>
+        </div>
+        <div class="card center">
+          <h2 class="h-section font-medium">0</h2>
+          <p class="text-secondary mt-2">cloud, telemetry, internet calls</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip -->
+  <section class="section container">
+    <div class="cta-strip">
+      <h2 class="h-section">Start free, no time limit.</h2>
+      <p>No credit card required. Free up to 300 samples &mdash; unlock an unlimited library with Personal.</p>
+      <div class="cta-strip__actions">
+        <a href="pricing.html" class="btn btn-primary btn-lg">Get AudioHaus</a>
+        <a href="download.html" class="btn btn-secondary btn-lg">Download Trial</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <p class="site-nav__logo" style="font-family:var(--font-heading);font-weight:500;font-size:1.0625rem">AudioHaus <span style="color:var(--secondary)">by Easby Studios</span></p>
+        <p>Local-first audio sample management for macOS. Built by Pongsathon Kheereekaew / The LT.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="license.html">License</a></li>
+          <li><a href="license.html#privacy">Privacy</a></li>
+        </ul>
+        <h4 style="margin-top:1.25rem">Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@easbystudios.com">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; 2026 Easby Studios. AudioHaus.</span>
+      <div class="site-footer__legal">
+        <a href="license.html">License</a>
+        <a href="license.html#privacy">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const toggle=document.getElementById('nav-toggle');
+const drawer=document.getElementById('nav-drawer');
+const closeBtn=document.getElementById('nav-drawer-close');
+function openDrawer(){drawer.classList.add('is-open');toggle.setAttribute('aria-expanded','true');closeBtn.focus();}
+function closeDrawer(){drawer.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');toggle.focus();}
+toggle.addEventListener('click',openDrawer);
+closeBtn.addEventListener('click',closeDrawer);
+drawer.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+</script>
+<script src="assets/site.js" defer></script>
+
+</body>
+</html>
