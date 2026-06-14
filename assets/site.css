@@ -143,6 +143,23 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:var(--weight-mediu
   background:var(--text);color:var(--bg);
 }
 
+/* ─── Download arch picker ───────────────────────────────────────────────── */
+.dl-picker{position:relative;display:inline-flex}
+.dl-picker__menu{
+  position:absolute;top:calc(100% + .5rem);left:50%;transform:translateX(-50%);
+  min-width:230px;background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--radius-container);padding:.375rem;
+  display:none;flex-direction:column;gap:.125rem;z-index:var(--z-dropdown);text-align:left;
+}
+.dl-picker__menu.is-open{display:flex}
+.dl-picker__menu a{
+  display:flex;flex-direction:column;gap:.125rem;
+  padding:.625rem .875rem;border-radius:var(--radius-container);
+  font-size:.9375rem;font-weight:var(--weight-medium);color:var(--text);
+}
+.dl-picker__menu a:hover{background:var(--surface)}
+.dl-picker__menu a span{font-size:.75rem;font-weight:var(--weight-regular);color:var(--muted);font-family:var(--font-mono)}
+
 /* ─── Cards ──────────────────────────────────────────────────────────────── */
 .card{
   background:var(--bg);border:1px solid var(--border);
