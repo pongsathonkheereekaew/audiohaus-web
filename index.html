@@ -67,13 +67,7 @@
       <p class="hero__subtitle">Library, analysis, similarity search, 20-voice audition, RX-style waveform, Stacks layering — single app, no cloud, no plug-in build, no internet required. AI variations are coming in a future update.</p>
       <div class="hero__actions">
         <a href="https://easbystudios.gumroad.com/l/auric" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Buy Now</a>
-        <div class="dl-picker">
-          <button type="button" class="btn btn-secondary btn-lg" id="tryfree-toggle" aria-expanded="false" aria-haspopup="true">Try Free</button>
-          <div class="dl-picker__menu" id="tryfree-menu" role="menu" aria-label="Choose your Mac">
-            <a href="Auric-1.0.0-arm64.dmg" download role="menuitem">Apple Silicon<span>M1&ndash;M4 &middot; 6.7 MB</span></a>
-            <a href="Auric-1.0.0-x86_64.dmg" download role="menuitem">Intel<span>x86_64 &middot; 7.2 MB</span></a>
-          </div>
-        </div>
+        <a href="download.html" class="btn btn-secondary btn-lg">Try Free</a>
         <a href="#features" class="btn btn-ghost btn-lg">See Features</a>
       </div>
       <p class="hero__meta"><span class="text-muted">No subscription &middot; One-time purchase &middot; Works offline</span></p>
@@ -291,13 +285,6 @@ function closeDrawer(){drawer.classList.remove('is-open');toggle.setAttribute('a
 toggle.addEventListener('click',openDrawer);
 closeBtn.addEventListener('click',closeDrawer);
 drawer.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
-const tf=document.getElementById('tryfree-toggle'),tfm=document.getElementById('tryfree-menu');
-if(tf&&tfm){
-  tf.addEventListener('click',e=>{e.stopPropagation();const o=tfm.classList.toggle('is-open');tf.setAttribute('aria-expanded',o);});
-  document.addEventListener('click',e=>{if(!tfm.contains(e.target)&&e.target!==tf){tfm.classList.remove('is-open');tf.setAttribute('aria-expanded','false');}});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'){tfm.classList.remove('is-open');tf.setAttribute('aria-expanded','false');}});
-  tfm.addEventListener('click',()=>{tfm.classList.remove('is-open');tf.setAttribute('aria-expanded','false');});
-}
 </script>
 <script src="assets/site.js" defer></script>
 
