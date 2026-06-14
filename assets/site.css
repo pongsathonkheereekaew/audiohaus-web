@@ -1,4 +1,4 @@
-/* AudioHaus — shared stylesheet
+/* Auric — shared stylesheet
    Theme: minimalist industrial · white canvas · grayscale only · zero shadows
    Invariants: two radii (12px/9999px) · two weights (400/500) · SF Pro Rounded headings */
 
@@ -189,6 +189,7 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:var(--weight-mediu
 .pricing-card__name{font-size:.875rem;font-weight:var(--weight-medium);color:var(--secondary);text-transform:uppercase;letter-spacing:.06em}
 .pricing-card__price{font-family:var(--font-heading);font-size:2.5rem;font-weight:var(--weight-medium);line-height:1;letter-spacing:-.03em}
 .pricing-card__price sub{font-size:.9rem;vertical-align:baseline;color:var(--secondary)}
+.pricing-card__price .price-was{font-size:1.5rem;color:var(--muted);text-decoration:line-through;font-weight:var(--weight-regular);margin-right:.375rem;letter-spacing:-.02em}
 .pricing-card__price small{display:block;font-size:.8125rem;color:var(--muted);font-weight:var(--weight-regular);font-family:var(--font-body);margin-top:.25rem;letter-spacing:0}
 .pricing-card__desc{font-size:.875rem;color:var(--secondary);line-height:1.5}
 .pricing-card__features{display:flex;flex-direction:column;gap:.625rem;flex:1}

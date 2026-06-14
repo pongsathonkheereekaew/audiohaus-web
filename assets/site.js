@@ -1,4 +1,4 @@
-/* AudioHaus — site interactions: scroll reveal + reduced-motion fallback */
+/* Auric — site interactions: scroll reveal + reduced-motion fallback */
 (function(){
   'use strict';
 

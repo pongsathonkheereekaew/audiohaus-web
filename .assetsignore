@@ -1,4 +1,6 @@
 .git
+.wrangler
+node_modules
 .gitignore
 .assetsignore
 wrangler.toml

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Features — AudioHaus</title>
-  <meta name="description" content="Every feature in AudioHaus — library management, DSP engine, Galaxy View, 20-voice audition, Pro Tools Bridge, and analysis.">
+  <title>Features — Auric</title>
+  <meta name="description" content="Every feature in Auric — library management, DSP engine, Galaxy View, 20-voice audition, similarity search, and analysis.">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 <!-- Nav -->
 <nav class="site-nav" aria-label="Main navigation">
   <div class="container site-nav__inner">
-    <a href="index.html" class="site-nav__logo">AudioHaus&nbsp;<span>by Easby Studios</span></a>
+    <a href="index.html" class="site-nav__logo">Auric&nbsp;<span>by Easby Studios</span></a>
     <div class="site-nav__links">
       <a href="index.html">Home</a>
       <a href="features.html" aria-current="page">Features</a>
@@ -23,7 +23,7 @@
       <a href="support.html">Support</a>
     </div>
     <div class="site-nav__cta">
-      <a href="pricing.html" class="btn btn-primary btn-sm">Buy Now</a>
+      <a href="https://easbystudios.gumroad.com/l/auric" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Buy Now</a>
       <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
           <line x1="2" y1="5" x2="18" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -51,7 +51,7 @@
     <a href="support.html">Support</a>
   </nav>
   <div class="nav-drawer__cta">
-    <a href="pricing.html" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Buy Now</a>
+    <a href="https://easbystudios.gumroad.com/l/auric" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Buy Now</a>
   </div>
 </div>
 
@@ -64,7 +64,7 @@
         <span class="pill">Feature Overview</span>
       </div>
       <h1 class="h-display hero__title">Built for the way<br>you work with samples.</h1>
-      <p class="hero__subtitle">Library, analysis, playback, search, waveform, smart collections, organisation &mdash; every feature in AudioHaus, organised by what you do with it. Creator power-tools (Create Variation, batch export, DAW integration) are planned for a future update.</p>
+      <p class="hero__subtitle">Library, analysis, playback, search, waveform, smart collections, organisation &mdash; every feature in Auric, organised by what you do with it. Creator power-tools (Create Variation, Pack Builder) are planned for a future update.</p>
     </div>
   </section>
 
@@ -337,7 +337,7 @@
           <line x1="9" y1="8" x2="9" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           <circle cx="9" cy="5.5" r=".75" fill="currentColor"/>
         </svg>
-        <p><strong>signalsmith-stretch</strong> is an open-source phase-vocoder library by Signalsmith Audio. AudioHaus uses it for all real-time DSP &mdash; no third-party licensing required.</p>
+        <p><strong>signalsmith-stretch</strong> is an open-source phase-vocoder library by Signalsmith Audio. Auric uses it for all real-time DSP &mdash; no third-party licensing required.</p>
       </div>
     </div>
   </section>
@@ -1251,47 +1251,10 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <p class="label">DAW integration</p>
-        <h2 class="h-section">Drag, Spot, or Batch &mdash; no plug-in build.</h2>
+        <p class="label">Export</p>
+        <h2 class="h-section">Drag or batch &mdash; straight into your DAW.</h2>
       </div>
-      <div class="grid-2">
-
-        <div class="card">
-          <div class="card__icon">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="5" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M12 8h4a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="card__visual">
-            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="20" y="50" width="100" height="80" rx="6" stroke="currentColor" stroke-width="1.5" fill="#fafafa"/>
-              <text x="70" y="74" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" fill="#000000" text-anchor="middle" font-weight="500">AudioHaus</text>
-              <rect x="32" y="84" width="76" height="6" fill="#e5e5e5"/>
-              <rect x="32" y="84" width="60" height="6" fill="currentColor"/>
-              <rect x="32" y="96" width="76" height="6" fill="#e5e5e5"/>
-              <rect x="32" y="96" width="40" height="6" fill="#737373"/>
-              <text x="70" y="118" font-family="ui-monospace,monospace" font-size="8" fill="#737373" text-anchor="middle">CONNECTED</text>
-              <path class="fx-slide-x" d="M124 90 L196 90" stroke="currentColor" stroke-width="1.5"/>
-              <path class="fx-slide-x" d="M188 84 L196 90 L188 96" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
-              <text x="160" y="80" font-family="ui-monospace,monospace" font-size="8" fill="#737373" text-anchor="middle">gRPC</text>
-              <text x="160" y="108" font-family="ui-monospace,monospace" font-size="7" fill="#a3a3a3" text-anchor="middle">PTSL · outbound only</text>
-              <rect x="200" y="50" width="100" height="80" rx="6" stroke="currentColor" stroke-width="1.5" fill="#ffffff"/>
-              <text x="250" y="74" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11" fill="#000000" text-anchor="middle" font-weight="500">Pro Tools</text>
-              <line x1="212" y1="86" x2="288" y2="86" stroke="#a3a3a3"/>
-              <line x1="212" y1="98" x2="288" y2="98" stroke="#a3a3a3"/>
-              <line x1="212" y1="110" x2="288" y2="110" stroke="#a3a3a3"/>
-              <rect x="226" y="82" width="40" height="8" fill="#000000"/>
-              <rect x="232" y="94" width="32" height="8" fill="#737373"/>
-              <text x="160" y="156" font-family="ui-monospace,monospace" font-size="8" fill="#a3a3a3" text-anchor="middle" letter-spacing="2">SPOT RAW · SPOT SLICES</text>
-            </svg>
-          </div>
-          <p class="card__title">Avid PTSL gRPC bridge</p>
-          <p class="card__body" style="margin-top:.5rem">Outbound only, no auto-launch. Explicit Connect / Test / Disconnect in Settings. Bridge State Panel shows Not Connected / Connected / Session Ready / Error.</p>
-          <p class="card__body" style="margin-top:.875rem"><strong>Spot Raw:</strong> right-click waveform &rarr; renders one contiguous clip (selection or whole file, with current pitch / gain) to Pro Tools &mdash; To Selected Track or To New Track.</p>
-          <p class="card__body" style="margin-top:.875rem"><strong>Spot Slices:</strong> right-click waveform &rarr; renders per-transient slices, preserving the active Transient Edit Set.</p>
-          <p class="card__body" style="margin-top:.875rem"><strong>Transport Sync:</strong> Off / PTSL / MIDI MMC. MIDI MMC creates a virtual <span class="mono">AudioHaus Sync</span> output (outbound only); destroyed on mode switch or app quit.</p>
-        </div>
+      <div class="grid-2" style="grid-template-columns:1fr;max-width:560px;margin-inline:auto">
 
         <div class="card">
           <div class="card__visual">
@@ -1325,10 +1288,6 @@
             <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.875rem;color:var(--secondary)">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;margin-top:.125rem"><polyline points="3,8 6,11 13,4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span>Multi-file drag, multi-select batch ops, Batch Export dialog with summary and best-effort cancel</span>
-            </li>
-            <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.875rem;color:var(--secondary)">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;margin-top:.125rem"><polyline points="3,8 6,11 13,4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span>Transport Sync mode in Settings: Off / PTSL / MIDI MMC (virtual <span class="mono">AudioHaus Sync</span> output, outbound only)</span>
             </li>
             <li style="display:flex;align-items:flex-start;gap:.625rem;font-size:.875rem;color:var(--secondary)">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;margin-top:.125rem"><polyline points="3,8 6,11 13,4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -1483,7 +1442,7 @@
           <div class="card__visual">
             <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="40" y="40" width="240" height="100" rx="8" stroke="currentColor" stroke-width="1.5" fill="#fafafa"/>
-              <text x="56" y="60" font-family="ui-monospace,monospace" font-size="9" fill="#737373" letter-spacing="2">AUDIOHAUS · LICENSE</text>
+              <text x="56" y="60" font-family="ui-monospace,monospace" font-size="9" fill="#737373" letter-spacing="2">AURIC · LICENSE</text>
               <text x="160" y="92" font-family="ui-monospace,monospace" font-size="16" fill="#000000" text-anchor="middle" font-weight="500" letter-spacing="3">XXXXX-XXXXX-XXXXX</text>
               <line x1="56" y1="108" x2="264" y2="108" stroke="#e5e5e5"/>
               <text x="56" y="124" font-family="ui-monospace,monospace" font-size="9" fill="#737373">TIER · Personal</text>
@@ -1509,7 +1468,7 @@
       <h2 class="h-section">Start free, no time limit.</h2>
       <p>No credit card required. Free up to 300 samples &mdash; unlock an unlimited library with Personal.</p>
       <div class="cta-strip__actions">
-        <a href="pricing.html" class="btn btn-primary btn-lg">Get AudioHaus</a>
+        <a href="https://easbystudios.gumroad.com/l/auric" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get Auric</a>
         <a href="download.html" class="btn btn-secondary btn-lg">Download Trial</a>
       </div>
     </div>
@@ -1522,7 +1481,7 @@
   <div class="container">
     <div class="site-footer__grid">
       <div class="site-footer__brand">
-        <p style="font-family:var(--font-heading);font-weight:500;font-size:1.0625rem">AudioHaus <span style="color:var(--secondary)">by Easby Studios</span></p>
+        <p style="font-family:var(--font-heading);font-weight:500;font-size:1.0625rem">Auric <span style="color:var(--secondary)">by Easby Studios</span></p>
         <p>Local-first audio sample management for macOS. Built by Pongsathon Kheereekaew / The LT.</p>
       </div>
       <div class="site-footer__col">
@@ -1554,7 +1513,7 @@
       </div>
     </div>
     <div class="site-footer__bottom">
-      <span>&copy; 2026 Easby Studios. AudioHaus.</span>
+      <span>&copy; 2026 Easby Studios. Auric.</span>
       <div class="site-footer__legal">
         <a href="license.html">License</a>
         <a href="license.html#privacy">Privacy</a>
