@@ -148,30 +148,20 @@
     <div class="container" style="max-width:640px">
       <div class="section-header">
         <p class="label">Lost your key?</p>
-        <h2 class="h-section">Request a resend</h2>
-        <p>Enter the email address used at checkout. Your key will be re-sent within a few minutes.</p>
+        <h2 class="h-section">Get your license</h2>
+        <p>Two ways to recover or re-download your Auric license.</p>
       </div>
-      <div class="card">
-        <div class="callout mb-6">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-            <circle cx="9" cy="9" r="7.5" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M9 8.25v4.5M9 6h.008" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-          <span>Fastest option: your <a href="https://app.gumroad.com/library" target="_blank" rel="noopener">Gumroad library</a> &mdash; instant self-service re-download. Use the form below as a backup.</span>
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="card__title">1 &middot; Gumroad library</h3>
+          <p class="card__body" style="margin:.5rem 0 1.25rem">Instant self-service. Sign in with your purchase email to re-download Auric and resend your license key.</p>
+          <a href="https://app.gumroad.com/library" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center">Open Gumroad library &rarr;</a>
         </div>
-        <form class="form__stack" action="mailto:hello@easbystudios.com" method="GET" enctype="text/plain">
-          <div class="form-group">
-            <label for="resend-email">Purchase email address</label>
-            <input type="email" id="resend-email" name="email" placeholder="you@example.com" required autocomplete="email">
-          </div>
-          <div class="form-group">
-            <label for="resend-order">Order number <span class="text-muted">(optional)</span></label>
-            <input type="text" id="resend-order" name="order" placeholder="e.g. 1234567">
-            <p class="form__hint">Found in your original receipt email from Gumroad.</p>
-          </div>
-          <button type="submit" class="btn btn-primary" style="align-self:flex-start">Send resend request</button>
-          <p class="form__hint">Opens your email client. Or email <a href="mailto:hello@easbystudios.com">hello@easbystudios.com</a> directly with subject "License resend".</p>
-        </form>
+        <div class="card">
+          <h3 class="card__title">2 &middot; Contact us</h3>
+          <p class="card__body" style="margin:.5rem 0 1.25rem">Can&rsquo;t access Gumroad? Email us with your purchase email or order number and we&rsquo;ll resend your key.</p>
+          <a href="mailto:hello@easbystudios.com?subject=Auric%20license%20request" class="btn btn-secondary" style="width:100%;justify-content:center">Email hello@easbystudios.com</a>
+        </div>
       </div>
     </div>
   </section>
